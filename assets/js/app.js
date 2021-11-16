@@ -114,28 +114,19 @@ function generateMoviesBlock(data) {
 
 let newServiceWorker;
 
-if ("serviceWorker" in navigator){
-    window.addEventListener("load", () => {
-navigator.serviceWorker.register("sw.js").then(
-    registerEvent =>{
-        registerEvent.addEventListener('updatefound', () =>{
-newServiceWorker = registerEvent.installing;
 
-newServiceWorker.addEventListener('statechange', () => {
-   /* if (newServiceWorker.state == 'installed'){
 
-    }*/
 
-    switch (newServiceWorker.state){
-case 'installed':
-    
-    }
-})
+
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function(){
+        navigator.serviceWorker.register('sw.js').then(() => {
+            console.log("Service Worker Registered");
         })
-    }
-);
     });
+    
 }
+
 
 // Inserting section before content element
 function createMovieContainer(section) {
@@ -183,14 +174,7 @@ document.onclick = function (event) {
 }
 
 
-function showSnackbarUpdate() {
-    // Get the snackbar DIV
-    let x = document.getElementById("snackbar");
-  
-    // Add the "show" class to DIV
-    x.className = "show";
-  
-  }
+
 
 
 
