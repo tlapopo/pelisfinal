@@ -3,9 +3,9 @@
     "background_color": "#35d8f6",
     "display": "fullscreen",
     "scope": "/",
-    "start_url": "/index.html",
-    "name": "MOVIES",
-    "short_name": "MOVIESFREE",
+    "start_url": "index.html",
+    "name": "Movie App",
+    "short_name": "Movie App",
     "description": "Aplicaci\u00f3n de pel\u00edculas ",
     "icons": [
         {
