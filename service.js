@@ -53,11 +53,11 @@ self.addEventListener("activate", (event) => {
 
 //NETWORK FIRTS
 
-/*self.addEventListener('fetch', event => {
+self.addEventListener('fetch', event => {
     event.respondWith(
         fetch(event.request).then(networkResponse => {
             return networkResponse || caches.match(event.request)
         })
     );
-});*/
+});
 
