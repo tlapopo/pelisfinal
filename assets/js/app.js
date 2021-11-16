@@ -120,7 +120,7 @@ let newServiceWorker;
 
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function(){
-        navigator.serviceWorker.register('sw.js').then(() => {
+        navigator.serviceWorker.register('service.js').then(() => {
             console.log("Service Worker Registered");
         })
     });
